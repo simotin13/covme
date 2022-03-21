@@ -5,6 +5,8 @@
 
 version 0.1.0 (2022/3/15), It's able to measure C1 coverage.
 
+![covme demo](https://user-images.githubusercontent.com/3637006/159233398-08e44417-5225-4f3a-bd2f-6fbdea58ed83.gif)
+
 # Supported platform
 version 0.1.0 (2022/3/15), X86_64 GNU/Linux is supported.
 
