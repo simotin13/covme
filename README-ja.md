@@ -5,6 +5,8 @@
 
 version 0.1.0 (2022/3/15)時点では、C1相当のカバレッジ計測ができます。
 
+![covme demo](https://user-images.githubusercontent.com/3637006/159233398-08e44417-5225-4f3a-bd2f-6fbdea58ed83.gif)
+
 # サポートしているプラットフォーム
 version 0.1.0 (2022/3/15)時点では X86_64 GNU/Linux での動作をサポートしています。
 - Ubuntu20.04 LTS
