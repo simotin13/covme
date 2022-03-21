@@ -27,6 +27,11 @@ specify your target program path as argument that you want to measure coverage.
 ./covme ./a.out
 ```
 
+If target program takes command line args, specify them after module path.
+```
+./covme ./a.out 1 2
+```
+
 If the target program finished, `covme` generate HTML a coverage result report in `report` directory.
 
 Note: Each time run `covme`, file in `report` directory is overwritten, please carefully
