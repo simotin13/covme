@@ -1,5 +1,5 @@
 #!/usr/bin/sh
-echo "build examples C,C++ code"
+echo "build examples"
 TEST_GCC=`which gcc`
 if [ $? -ne 0 ]; then
   echo "gcc not found, please make sure gcc installed"
@@ -15,27 +15,34 @@ fi
 cd examples
 cd c
 cd function_call
-echo "build c/function_call/a.out"
+echo "build examples/c/function_call/a.out"
 gcc -g main.c calc.c
 cd ..
 
 cd with_stdin
-echo "build c/with_stdin/a.out"
+echo "build examples/c/with_stdin/a.out"
 gcc -g main.c
+cd ..
+
+cd exit_target
+echo "build examples/c/exit_target/a.out"
+gcc -c wait.c
+ar rcs mylib.a wait.o
+gcc -g main.c mylib.a
 cd ..
 
 cd with_sharedobject
 # build shared object
-echo "build c/with_sharedobject/libcalc.so"
+echo "build examples/c/with_sharedobject/libcalc.so"
 gcc -g -shared calc.c -o libcalc.so
 
 # build target program
-echo "build c/with_sharedobject/a.out"
+echo "build examples/c/with_sharedobject/a.out"
 gcc main.c -g -L. -lcalc
 
 cd ../..
 cd cpp
 cd function_call
-echo "build cpp/function_call/a.out"
+echo "build examples/cpp/function_call/a.out"
 g++ -g main.cpp calc.cpp
 cd ../../..
