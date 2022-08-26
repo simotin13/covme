@@ -78,7 +78,7 @@ run `00_build_examples.sh`, it will build source files in examples directroy.
 Note: `00_build_examples.sh` assumed that `gcc` is installed.
 
 ### run sample scripts and measure coverage
-`01_try_simple_example.sh` ～ `03_try_stdin_example.sh` are sample sript of `covme`,try them after run `00_build_examples.sh` completed.
+`01_try_simple_example.sh` ～ `05_try_exit_trace_example.sh` are sample sript of `covme`,try them after run `00_build_examples.sh` completed.
 
 each sample script detail are following
 

@@ -88,7 +88,7 @@ examples では以下の簡単なサンプルプログラムを含んでいま�
 `00_build_examples.sh` では `gcc` コマンドがインストールされている事を想定しています。インストールされていない場合はあらかじめインストールしてください。
 
 ### サンプルプログラムのカバレッジ計測の実行
-`01_try_simple_example.sh` ～ `04_try_stdin_example.sh` は `covme` を使ったカバレッジ計測の実行のサンプルスクリプトです。
+`01_try_simple_example.sh` ～ `05_try_exit_trace_example.sh` は `covme` を使ったカバレッジ計測の実行のサンプルスクリプトです。
 `00_build_examples.sh` でのビルド完了後に試してください。
 
 各スクリプト・プログラムの内容は以下の通りです。
