@@ -67,6 +67,10 @@ There are some sample target program source files in the `examples` directory.
 
    sample for user input from stdin(scanf).
 
+1. exit_target
+
+   sample for code has infinite loop and long periods of no response from library functions.
+
 ## Build examples and try them
 
 ### Build examples
@@ -80,7 +84,7 @@ each sample script detail are following
 
 1. 01_try_simple_example.sh
     
-    measure `examples/c/function_call` program coverage with `covme`.
+    Measure `examples/c/function_call` program coverage with `covme`.
 
 1. 02_try_shared_object_example.sh
 
@@ -90,14 +94,20 @@ each sample script detail are following
 
 1. 03_try_stdin_example.sh
 
-   sample for user input from stdin(scanf).
+   Sample for user input from stdin(scanf).
 
-   you need to input from stdin while running `covme`.
+   You need to input from stdin while running `covme`.
 
 1. 04_try_simple_cpp_example.sh
 
-   measure `examples/cpp/function_call` program coverage with `covme`.
+   Measure `examples/cpp/function_call` program coverage with `covme`.
    It's simple C++ application code coverage example.
+
+1. 05_try_exit_trace_example.sh
+
+   Measure `examples/c/exit_target` program coverage with `covme`.
+   This is an example of coverage measurement when there is an infinite loop in the program and the library function does not return a response for a long time.
+   You can stop trace and generate a coverage report by input `ctrl-c`.
 
 # Known Bugs and Issues
 Known Bugs and Issues are listed below
