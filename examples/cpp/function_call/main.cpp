@@ -22,13 +22,13 @@ int main(int argc, char **argv)
     b = atoi(argv[2]);
     result = calc.add(1, 2);
 
-    if (a == 3)
+    if (result == 3)
     {
         std::cout << "answer is 3" << std::endl;
     }
     else
     {
-        std::cout << "answer is not 3" << std::endl;
+        std::cout << "answer " << result << " is not 3" << std::endl;
     }
     return 0;
 }
